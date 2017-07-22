@@ -1,0 +1,28 @@
+{
+  "name": "identity-graphql",
+  "version": "0.1.0",
+  "description": "GraphQL api for the identity application",
+  "main": "server.js",
+  "repository": "https://github.com/m8r1x/contact-graphql.git",
+  "author": "wmik",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint .",
+    "lint:watch": "esw -w",
+    "start": "node server.js",
+    "start:watch": "nodemon"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^4.0.0",
+    "express": "^4.15.3",
+    "express-graphql": "^0.6.6",
+    "express-jwt": "^5.3.0",
+    "graphql": "^0.10.5",
+    "mongoose": "^4.11.3"
+  },
+  "devDependencies": {
+    "eslint": "^4.2.0",
+    "eslint-watch": "^3.1.2"
+  }
+}
