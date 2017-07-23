@@ -40,10 +40,10 @@ Copy your access token and paste it at the end of your request like so:
 Hit ENTER and QUERY away!
 
 ##### POSTMAN
-Visit port `11040` in your favorite web browser and register as a new api user by sending a `POST` request with the `header` set to `application/json` and the `body` as follows:
+Visit port `11040` and register as a new api user by sending a `POST` request with the `header` set to `application/json` and the `body` as follows:
 ```javascript
 {
-	"query": "mutation register($data: ApiUserInput!){register(data: $data }){email}}", // all this should be inline
+    "query": "mutation register($data: ApiUserInput!){register(data: $data }){email}}", // all this should be inline
     "operationName": "register",
     "variables": {
     	"data": {
